@@ -12,6 +12,14 @@ def write_todos(todos_arg, filepath=FILEPATH):
     with open(filepath, 'w') as file:
             file.writelines(todos_arg)
 
+def get_meters(feet, inches):
+    #convert feet and inches into meters
+    feet = int(input("Enter feet: "))
+    inches = int(input("Enter inches: "))
+    meters = (feet + inches)* .3048
+    return meters
+
+
 if __name__ == "__main__":
     print("Hello")
     print(get_todos())
